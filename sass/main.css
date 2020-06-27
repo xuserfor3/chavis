@@ -6,7 +6,6 @@ body {
 
 .navbar {
   width: 100%;
-  height: 31rem;
   padding: 0;
   margin: 0;
   display: -webkit-box;
@@ -115,7 +114,7 @@ body {
   padding: 0 0 0 3rem;
   font-family: proxima-nova, sans-serif;
   font-size: 48px;
-  color: #DF57BC;
+  color: #226CE0;
 }
 
 .navbar .img-text .text .text-header {
@@ -153,7 +152,7 @@ body {
 
 .navbar .img-text .text .btn-header {
   display: inline-block;
-  background: #226CE0;
+  background: #55286F;
   border: 0;
   border-radius: 8px;
   color: #ffffff;
@@ -163,5 +162,99 @@ body {
   margin: 2rem 0 0 0;
   -webkit-transform: translate(3rem, 0);
           transform: translate(3rem, 0);
+}
+
+.One {
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.One .description {
+  width: 50%;
+}
+
+.One .description .title-description {
+  margin: 0 2rem 1rem 5rem;
+  padding: 0;
+  color: #226CE0;
+  font-size: 48px;
+  font-weight: 900;
+}
+
+.One .description .text-description {
+  margin: 0 2rem 2rem 5rem;
+  padding: 0;
+  color: #226CE0;
+  font-size: nomral;
+}
+
+.One .description .cards-description {
+  margin: 0 2rem 0 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.One .description .cards-description .cardOne {
+  margin: 0 0.5rem;
+}
+
+.One .description .cards-description .cardOne .icon-one::after {
+  content: '';
+  display: block;
+  width: 2rem;
+  height: 2rem;
+  background: url("../src/icons/Chemical-Structure.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.One .description .cards-description .cardOne .text-card {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  color: #226CE0;
+  font-weight: 400;
+}
+
+.One .description .cards-description .cardOne .icon-two {
+  content: '';
+  display: block;
+  width: 2rem;
+  height: 2rem;
+  background: url("../src/icons/Heart-Rate.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.One .description .cards-description .cardOne .icon-three {
+  content: '';
+  display: block;
+  width: 2rem;
+  height: 2rem;
+  background: url("../src/icons/Lungs.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.One .doctor {
+  width: 50%;
 }
 /*# sourceMappingURL=main.css.map */

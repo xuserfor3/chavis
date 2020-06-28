@@ -1,0 +1,64 @@
+@import _variables
+
+@mixin aftericon($icon)
+    content: ''
+    display: block
+    width: 2rem
+    height: 2rem
+    background: $icon
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center
+    margin: 0 auto
+    padding: 0
+
+.One
+    margin: 0
+    padding: 0
+    display: flex
+    flex-wrap: wrap
+    align-items: center
+
+    .description
+        width: 50%
+
+        .title-description
+            margin: 0 2rem 1rem 5rem
+            padding: 0
+            color: $mainColor
+            font-size: $fsize-48
+            font-weight: $fw-headers
+
+        .text-description
+            margin: 0 2rem 2rem 5rem
+            padding: 0
+            color: $mainColor
+            font-size: $fs-bodyNor
+
+        .cards-description
+            margin: 0 2rem 0 5rem
+            display: flex
+
+            .cardOne
+                margin: 0 0.5rem
+
+                .icon-one
+                    &::after
+                        @include aftericon(url('../src/icons/Chemical-Structure.svg'))
+
+                .text-card
+                    margin: 0
+                    padding: 0
+                    text-align: center
+                    color: $mainColor
+                    font-weight: $fw-body4
+
+                .icon-two
+                    @include aftericon(url('../src/icons/Heart-Rate.svg'))
+
+                .icon-three
+                    @include aftericon(url('../src/icons/Lungs.svg'))
+                    
+
+    .doctor
+        width: 50%

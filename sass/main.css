@@ -257,4 +257,68 @@ body {
 .One .doctor {
   width: 50%;
 }
+
+.two {
+  background: #892ca3;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.two .left {
+  width: 50%;
+}
+
+.two .left .title-left {
+  font-size: 48px;
+  color: #226CE0;
+  margin: 0 2rem 1rem 5rem;
+  padding: 0;
+}
+
+.two .left .text-left {
+  color: #226CE0;
+  font-weight: 400;
+  margin: 0 2rem 2rem 5rem;
+}
+
+.two .left input[type="button"] {
+  background: #55286F;
+  color: #ffffff;
+  border: 0;
+  border-radius: 0.5rem;
+  margin: 0 0 0 5rem;
+  padding: 1rem 2rem;
+}
+
+.two .right {
+  background: #afd889;
+  width: 50%;
+}
+
+.two .right .title-text {
+  background: #aee822;
+  margin: 0 6rem 0 3rem;
+}
+
+.two .right .title-text .title-right {
+  background: #ca282a;
+  font-size: 32px;
+  color: #DF57BC;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.two .right .title-text .text-right {
+  background: #cba882;
+  font-weight: 400;
+  color: #DF57BC;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
 /*# sourceMappingURL=main.css.map */

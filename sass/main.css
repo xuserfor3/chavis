@@ -158,7 +158,7 @@ body {
   color: #ffffff;
   font-size: 18px;
   cursor: pointer;
-  padding: 1 rem 2rem;
+  padding: 1rem 2rem;
   margin: 2rem 0 0 0;
   -webkit-transform: translate(3rem, 0);
           transform: translate(3rem, 0);
@@ -388,14 +388,20 @@ body {
 .three {
   width: 100%;
   height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .three .left-three {
   width: 50%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .three .left-three .title-text {
-  margin: 0 2rem 1rem 5rem;
+  margin: 0 2rem 3rem 5rem;
 }
 
 .three .left-three .title-text .title {
@@ -412,28 +418,38 @@ body {
 }
 
 .three .left-three .cards-three {
-  background: #ff28ab;
   margin: 0 2rem 1rem 5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .three .left-three .cards-three .card-one, .three .left-three .cards-three .two .right .cards .card-two, .two .right .cards .three .left-three .cards-three .card-two, .three .left-three .cards-three .two .right .cards .card-three, .two .right .cards .three .left-three .cards-three .card-three {
+  width: 30%;
   margin: 0;
   padding: 0;
 }
 
 .three .left-three .cards-three .card-one img, .three .left-three .cards-three .two .right .cards .card-two img, .two .right .cards .three .left-three .cards-three .card-two img, .three .left-three .cards-three .two .right .cards .card-three img, .two .right .cards .three .left-three .cards-three .card-three img {
   width: 100%;
+  height: 8.8rem;
   vertical-align: top;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  margin: 0 0 1rem 0;
 }
 
 .three .left-three .cards-three .card-one .text-card1, .three .left-three .cards-three .two .right .cards .card-two .text-card1, .two .right .cards .three .left-three .cards-three .card-two .text-card1, .three .left-three .cards-three .two .right .cards .card-three .text-card1, .two .right .cards .three .left-three .cards-three .card-three .text-card1 {
-  background: #bbde88;
   color: #226CE0;
   font-weight: 400;
-  margin: 0;
+  margin: 0 0 2rem 0;
 }
 
 .three .left-three .cards-three .card-one input[type="button"], .three .left-three .cards-three .two .right .cards .card-two input[type="button"], .two .right .cards .three .left-three .cards-three .card-two input[type="button"], .three .left-three .cards-three .two .right .cards .card-three input[type="button"], .two .right .cards .three .left-three .cards-three .card-three input[type="button"] {
@@ -447,20 +463,24 @@ body {
 }
 
 .three .left-three .cards-three .card-two {
-  background: #ffab22;
-  margin: 0 1rem;
+  width: 30%;
 }
 
 .three .left-three .cards-three .card-two img {
   width: 100%;
+  height: 8.8rem;
   vertical-align: top;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  margin: 0 0 1rem 0;
 }
 
 .three .left-three .cards-three .card-two .text-card {
-  background: #bbde88;
   color: #226CE0;
   font-weight: 400;
-  margin: 0;
+  margin: 0 0 2rem 0;
 }
 
 .three .left-three .cards-three .card-two input[type="button"] {
@@ -474,20 +494,26 @@ body {
 }
 
 .three .left-three .cards-three .card-three {
+  width: 30%;
   margin: 0;
   padding: 0;
 }
 
 .three .left-three .cards-three .card-three img {
   width: 100%;
+  height: 8.8rem;
   vertical-align: top;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  margin: 0 0 1rem 0;
 }
 
 .three .left-three .cards-three .card-three .text-card {
-  background: #bbde88;
   color: #226CE0;
   font-weight: 400;
-  margin: 0;
+  margin: 0 0 2rem 0;
 }
 
 .three .left-three .cards-three .card-three input[type="button"] {
@@ -498,5 +524,58 @@ body {
   font-size: 1.125rem;
   padding: 1rem 2rem;
   margin: 0;
+}
+
+.three .right-three {
+  width: 50%;
+  position: relative;
+}
+
+.three .right-three img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+}
+
+.three .right-three .subscribe-input {
+  position: absolute;
+  background: #ffffff;
+  width: 60%;
+  border-radius: 0.7rem 0.8rem 0.8rem 0.7rem;
+  border: 0.125rem solid #55286F;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  top: 70%;
+  right: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.three .right-three .subscribe-input input[type="email"] {
+  background: none;
+  border: 0;
+  width: 100%;
+  outline: none;
+  padding: 0 1rem;
+  font-size: 1.125rem;
+  color: #55286F;
+}
+
+.three .right-three .subscribe-input input[type="button"] {
+  background: #55286F;
+  margin: 0;
+  padding: 1rem 2rem;
+  border: 0;
+  border-radius: 0 0.5rem 0.5rem 0;
+  color: #ffffff;
+  font-size: 1.125rem;
+  font-weight: 400;
 }
 /*# sourceMappingURL=main.css.map */

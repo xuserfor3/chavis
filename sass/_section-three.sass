@@ -3,12 +3,14 @@
 .three
     width: 100%
     height: 100vh
+    display: flex
 
     .left-three
         width: 50%
+        align-self: center
 
         .title-text
-            margin: 0 2rem 1rem 5rem
+            margin: 0 2rem 3rem 5rem
 
             .title
                 font-size: $fsize-48
@@ -22,15 +24,15 @@
                 margin: 0
 
         .cards-three
-            background: #ff28ab
             margin: 0 2rem 1rem 5rem
             display: flex
+            flex-wrap: wrap
+            justify-content: space-between
 
             @mixin textcard
-                background: #bbde88
                 color: $mainColor
                 font-weight: $fw-body4
-                margin: 0
+                margin: 0 0 2rem 0
 
             @mixin inputtypetext
                 background: $thirdColor
@@ -42,13 +44,17 @@
                 margin: 0
 
             .card-one
+                width: 30%
                 margin: 0
                 padding: 0
 
                 img 
                     width: 100%
-                    height: 
+                    height: 8.8rem
                     vertical-align: top
+                    object-fit: cover
+                    object-position: center
+                    margin: 0 0 1rem 0
 
                 .text-card1
                     @include textcard
@@ -57,13 +63,15 @@
                     @include inputtypetext
 
             .card-two
-                background: #ffab22
-                margin: 0 1rem
+                width: 30%
 
                 img 
                     width: 100%
-                    height: 
+                    height: 8.8rem
                     vertical-align: top
+                    object-fit: cover
+                    object-position: center
+                    margin: 0 0 1rem 0
 
                 .text-card
                     @include textcard
@@ -72,16 +80,61 @@
                     @include inputtypetext
 
             .card-three
+                width: 30%
                 margin: 0
                 padding: 0
 
                 img 
                     width: 100%
-                    height: 
+                    height: 8.8rem
                     vertical-align: top
+                    object-fit: cover
+                    object-position: center
+                    margin: 0 0 1rem 0
 
                 .text-card
                     @include textcard
                     
                 input[type="button"]
                     @include inputtypetext
+
+    .right-three
+        width: 50%
+        position: relative
+
+        img 
+            width: 100%
+            height: 100%
+            object-fit: cover
+            object-position: top
+
+        .subscribe-input
+            position: absolute
+            background: #ffffff
+            width: 60%
+            border-radius: 0.7rem 0.8rem 0.8rem 0.7rem
+            border: 0.125rem solid $thirdColor
+            box-sizing: border-box
+            top: 70%
+            right: 20%
+            display: flex
+            justify-content: flex-end
+
+            input[type="email"]
+                background: none
+                border: 0
+                width: 100%
+                outline: none
+                padding: 0 1rem
+                font-size: 1.125rem
+                color: $thirdColor
+
+            input[type="button"]
+                background: $thirdColor
+                margin: 0
+                padding: 1rem 2rem
+                border: 0
+                border-radius: 0 0.5rem 0.5rem 0
+                color: #ffffff
+                font-size: 1.125rem
+                font-weight: $fw-body4

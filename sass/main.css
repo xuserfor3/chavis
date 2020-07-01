@@ -578,4 +578,194 @@ body {
   font-size: 1.125rem;
   font-weight: 400;
 }
+
+.four {
+  width: 100%;
+  height: 100vh;
+  margin: 8rem 0 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.four .imgs-left {
+  width: 50%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+}
+
+.four .imgs-left img {
+  vertical-align: top;
+  width: 48%;
+  height: 48%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.four .info-right {
+  width: 50%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.four .info-right .title-text {
+  margin: 0 6rem 2rem 3rem;
+}
+
+.four .info-right .title-text .title {
+  font-size: 48px;
+  color: #226CE0;
+  font-weight: 900;
+  margin: 0 0 1rem 0;
+  padding: 0;
+}
+
+.four .info-right .title-text .text {
+  color: #226CE0;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+}
+
+.four .info-right .cards {
+  margin: 0 6rem 3rem 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.four .info-right .cards .card-one, .four .info-right .two .right .cards .card-two, .two .right .four .info-right .cards .card-two, .four .info-right .two .right .cards .card-three, .two .right .four .info-right .cards .card-three {
+  width: 47%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.four .info-right .cards .card-one img, .four .info-right .two .right .cards .card-two img, .two .right .four .info-right .cards .card-two img, .four .info-right .two .right .cards .card-three img, .two .right .four .info-right .cards .card-three img {
+  width: 100%;
+  border-radius: 0.5rem;
+  vertical-align: top;
+  margin: 0 0 2rem 0;
+}
+
+.four .info-right .cards .card-one input[type="button"], .four .info-right .two .right .cards .card-two input[type="button"], .two .right .four .info-right .cards .card-two input[type="button"], .four .info-right .two .right .cards .card-three input[type="button"], .two .right .four .info-right .cards .card-three input[type="button"] {
+  border: 0;
+  border-radius: 0.5rem;
+  padding: 1rem 2rem;
+  margin: 0 auto;
+  background: #55286F;
+  color: #ffffff;
+  font-size: 1.125rem;
+}
+
+.four .info-right .cards .card-two {
+  width: 47%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.four .info-right .cards .card-two img {
+  width: 100%;
+  border-radius: 0.5rem;
+  vertical-align: top;
+  margin: 0 0 2rem 0;
+}
+
+.four .info-right .cards .card-two input[type="button"] {
+  border: 0;
+  border-radius: 0.5rem;
+  padding: 1rem 2rem;
+  margin: 0 auto;
+  background: #55286F;
+  color: #ffffff;
+  font-size: 1.125rem;
+}
+
+.four .info-right .text2 {
+  margin: 0 6rem 0 3rem;
+  padding: 0;
+  color: #226CE0;
+  font-weight: 400;
+}
+
+.five {
+  background: #f8aeb2;
+}
+
+.five .form-left {
+  background: #fa38be;
+  width: 50%;
+}
+
+.five .form-left .title-text {
+  background: #fa990a;
+  margin: 0 2rem 0rem 5rem;
+  padding: 0;
+}
+
+.five .form-left .title-text .title {
+  color: #226CE0;
+  font-size: 48px;
+  font-weight: 900;
+  margin: 0 0 1rem 0;
+  padding: 0;
+}
+
+.five .form-left .title-text .text {
+  color: #226CE0;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+}
+
+.five .form-left .form {
+  background: #af82ff;
+  margin: 0 2rem 0 5rem;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.five .form-left .form input[type="text"], .five .form-left .form input[type="email"] {
+  background: none;
+  width: 48%;
+  border: 1px solid #55286F;
+  border-radius: 0.5rem;
+  outline: 0;
+  padding: 1rem;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.five .form-left .form textarea {
+  background: none;
+  width: 100%;
+}
 /*# sourceMappingURL=main.css.map */

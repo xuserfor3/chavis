@@ -1,0 +1,49 @@
+.five
+    background: #f8aeb2
+
+    .form-left
+        background: #fa38be
+        width: 50%
+
+        .title-text
+            background: #fa990a
+            margin: 0 2rem 0rem 5rem
+            padding: 0
+
+            .title
+                color: $mainColor
+                font-size: $fsize-48
+                font-weight: $fw-headers
+                margin: 0 0 1rem 0
+                padding: 0
+
+            .text
+                color: $mainColor
+                font-weight: $fw-body4
+                margin: 0
+                padding: 0
+
+        .form
+            background: #af82ff
+            margin: 0 2rem 0 5rem
+            padding: 0
+            display: flex
+            flex-wrap: wrap
+            justify-content: space-between
+
+            input[type="text"]
+                background: none
+                width: 48%
+                border: 1px solid $thirdColor
+                border-radius: 0.5rem
+                outline: 0
+                padding: 1rem
+                margin: 0
+                box-sizing: border-box
+
+            input[type="email"]
+                @extend input[type="text"]
+
+            textarea
+                background: none
+                width: 100%

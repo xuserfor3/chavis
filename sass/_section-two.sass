@@ -1,10 +1,21 @@
-@import _variables
+@mixin aftericon($icon)
+    content: ''
+    display: block
+    width: 2rem
+    height: 2rem
+    background: $icon
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center
+    margin: 0 auto
+    padding: 0
 
 .two
-    background: #892ca3
     width: 100%
+    height: 100vh
     display: flex
     flex-wrap: wrap
+    align-items: center
 
     .left
         width: 50%
@@ -29,25 +40,58 @@
             padding: 1rem 2rem
 
     .right
-        background: #afd889
         width: 50%
 
         .title-text
-            background: #aee822
             margin: 0 6rem 0 3rem
 
             .title-right
-                background: #ca282a
                 font-size: $fsize-32
                 color: $secondColor
                 text-align: center
-                margin: 0
+                margin: 0 0 1rem 0
                 padding: 0
 
             .text-right
-                background: #cba882
                 font-weight: $fw-body4
                 color: $secondColor
                 text-align: center
-                margin: 0
+                margin: 0 0 2rem 0 
                 padding: 0
+
+        .cards
+            margin: 0 6rem 0 3rem
+            display: flex
+
+            .card-one
+                margin: 0 0.5rem
+
+                .icon-card
+                    &::before
+                       @include aftericon(url('../src/icons/Health.svg'))
+
+                .text-card
+                    text-align: center
+                    color: $secondColor
+                    font-weight: $fw-body4
+                    margin: 1rem 0 0 0
+                       
+            .card-two
+                @extend .card-one
+
+                .icon-card
+                    &::before
+                       @include aftericon(url('../src/icons/Stethoscope.svg'))
+
+            .card-three
+                @extend .card-one
+
+                .icon-card
+                    &::before 
+                        @include aftericon(url('../src/icons/Stress.svg'))
+        
+        .text2-right
+            text-align: center
+            color: $secondColor
+            font-weight: $fw-body4
+            margin: 2rem 6rem 0  3rem

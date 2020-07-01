@@ -1,0 +1,87 @@
+@import _variables
+
+.three
+    width: 100%
+    height: 100vh
+
+    .left-three
+        width: 50%
+
+        .title-text
+            margin: 0 2rem 1rem 5rem
+
+            .title
+                font-size: $fsize-48
+                color: $mainColor
+                margin: 0 0 1rem 0
+                padding: 0
+
+            .text
+                color: $mainColor
+                font-weight: $fw-body4
+                margin: 0
+
+        .cards-three
+            background: #ff28ab
+            margin: 0 2rem 1rem 5rem
+            display: flex
+
+            @mixin textcard
+                background: #bbde88
+                color: $mainColor
+                font-weight: $fw-body4
+                margin: 0
+
+            @mixin inputtypetext
+                background: $thirdColor
+                border: 0
+                border-radius: 8px
+                color: #ffffff
+                font-size: 1.125rem
+                padding: 1rem 2rem
+                margin: 0
+
+            .card-one
+                margin: 0
+                padding: 0
+
+                img 
+                    width: 100%
+                    height: 
+                    vertical-align: top
+
+                .text-card1
+                    @include textcard
+
+                input[type="button"]
+                    @include inputtypetext
+
+            .card-two
+                background: #ffab22
+                margin: 0 1rem
+
+                img 
+                    width: 100%
+                    height: 
+                    vertical-align: top
+
+                .text-card
+                    @include textcard
+
+                input[type="button"]
+                    @include inputtypetext
+
+            .card-three
+                margin: 0
+                padding: 0
+
+                img 
+                    width: 100%
+                    height: 
+                    vertical-align: top
+
+                .text-card
+                    @include textcard
+                    
+                input[type="button"]
+                    @include inputtypetext

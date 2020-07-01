@@ -158,7 +158,7 @@ body {
   color: #ffffff;
   font-size: 18px;
   cursor: pointer;
-  padding: 18px 32px;
+  padding: 1 rem 2rem;
   margin: 2rem 0 0 0;
   -webkit-transform: translate(3rem, 0);
           transform: translate(3rem, 0);
@@ -221,7 +221,7 @@ body {
 }
 
 .One .description .cards-description .cardOne .text-card {
-  margin: 0;
+  margin: 1rem 0 0 0;
   padding: 0;
   text-align: center;
   color: #226CE0;
@@ -259,13 +259,16 @@ body {
 }
 
 .two {
-  background: #892ca3;
   width: 100%;
+  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .two .left {
@@ -295,30 +298,205 @@ body {
 }
 
 .two .right {
-  background: #afd889;
   width: 50%;
 }
 
 .two .right .title-text {
-  background: #aee822;
   margin: 0 6rem 0 3rem;
 }
 
 .two .right .title-text .title-right {
-  background: #ca282a;
   font-size: 32px;
   color: #DF57BC;
   text-align: center;
-  margin: 0;
+  margin: 0 0 1rem 0;
   padding: 0;
 }
 
 .two .right .title-text .text-right {
-  background: #cba882;
   font-weight: 400;
   color: #DF57BC;
   text-align: center;
+  margin: 0 0 2rem 0;
+  padding: 0;
+}
+
+.two .right .cards {
+  margin: 0 6rem 0 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.two .right .cards .card-one, .two .right .cards .card-two, .two .right .cards .card-three {
+  margin: 0 0.5rem;
+}
+
+.two .right .cards .card-one .icon-card::before, .two .right .cards .card-two .icon-card::before, .two .right .cards .card-three .icon-card::before {
+  content: '';
+  display: block;
+  width: 2rem;
+  height: 2rem;
+  background: url("../src/icons/Health.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.two .right .cards .card-one .text-card, .two .right .cards .card-two .text-card, .two .right .cards .card-three .text-card {
+  text-align: center;
+  color: #DF57BC;
+  font-weight: 400;
+  margin: 1rem 0 0 0;
+}
+
+.two .right .cards .card-two .icon-card::before {
+  content: '';
+  display: block;
+  width: 2rem;
+  height: 2rem;
+  background: url("../src/icons/Stethoscope.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.two .right .cards .card-three .icon-card::before {
+  content: '';
+  display: block;
+  width: 2rem;
+  height: 2rem;
+  background: url("../src/icons/Stress.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.two .right .text2-right {
+  text-align: center;
+  color: #DF57BC;
+  font-weight: 400;
+  margin: 2rem 6rem 0  3rem;
+}
+
+.three {
+  width: 100%;
+  height: 100vh;
+}
+
+.three .left-three {
+  width: 50%;
+}
+
+.three .left-three .title-text {
+  margin: 0 2rem 1rem 5rem;
+}
+
+.three .left-three .title-text .title {
+  font-size: 48px;
+  color: #226CE0;
+  margin: 0 0 1rem 0;
+  padding: 0;
+}
+
+.three .left-three .title-text .text {
+  color: #226CE0;
+  font-weight: 400;
+  margin: 0;
+}
+
+.three .left-three .cards-three {
+  background: #ff28ab;
+  margin: 0 2rem 1rem 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.three .left-three .cards-three .card-one, .three .left-three .cards-three .two .right .cards .card-two, .two .right .cards .three .left-three .cards-three .card-two, .three .left-three .cards-three .two .right .cards .card-three, .two .right .cards .three .left-three .cards-three .card-three {
   margin: 0;
   padding: 0;
+}
+
+.three .left-three .cards-three .card-one img, .three .left-three .cards-three .two .right .cards .card-two img, .two .right .cards .three .left-three .cards-three .card-two img, .three .left-three .cards-three .two .right .cards .card-three img, .two .right .cards .three .left-three .cards-three .card-three img {
+  width: 100%;
+  vertical-align: top;
+}
+
+.three .left-three .cards-three .card-one .text-card1, .three .left-three .cards-three .two .right .cards .card-two .text-card1, .two .right .cards .three .left-three .cards-three .card-two .text-card1, .three .left-three .cards-three .two .right .cards .card-three .text-card1, .two .right .cards .three .left-three .cards-three .card-three .text-card1 {
+  background: #bbde88;
+  color: #226CE0;
+  font-weight: 400;
+  margin: 0;
+}
+
+.three .left-three .cards-three .card-one input[type="button"], .three .left-three .cards-three .two .right .cards .card-two input[type="button"], .two .right .cards .three .left-three .cards-three .card-two input[type="button"], .three .left-three .cards-three .two .right .cards .card-three input[type="button"], .two .right .cards .three .left-three .cards-three .card-three input[type="button"] {
+  background: #55286F;
+  border: 0;
+  border-radius: 8px;
+  color: #ffffff;
+  font-size: 1.125rem;
+  padding: 1rem 2rem;
+  margin: 0;
+}
+
+.three .left-three .cards-three .card-two {
+  background: #ffab22;
+  margin: 0 1rem;
+}
+
+.three .left-three .cards-three .card-two img {
+  width: 100%;
+  vertical-align: top;
+}
+
+.three .left-three .cards-three .card-two .text-card {
+  background: #bbde88;
+  color: #226CE0;
+  font-weight: 400;
+  margin: 0;
+}
+
+.three .left-three .cards-three .card-two input[type="button"] {
+  background: #55286F;
+  border: 0;
+  border-radius: 8px;
+  color: #ffffff;
+  font-size: 1.125rem;
+  padding: 1rem 2rem;
+  margin: 0;
+}
+
+.three .left-three .cards-three .card-three {
+  margin: 0;
+  padding: 0;
+}
+
+.three .left-three .cards-three .card-three img {
+  width: 100%;
+  vertical-align: top;
+}
+
+.three .left-three .cards-three .card-three .text-card {
+  background: #bbde88;
+  color: #226CE0;
+  font-weight: 400;
+  margin: 0;
+}
+
+.three .left-three .cards-three .card-three input[type="button"] {
+  background: #55286F;
+  border: 0;
+  border-radius: 8px;
+  color: #ffffff;
+  font-size: 1.125rem;
+  padding: 1rem 2rem;
+  margin: 0;
 }
 /*# sourceMappingURL=main.css.map */

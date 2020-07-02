@@ -709,17 +709,24 @@ body {
 }
 
 .five {
-  background: #f8aeb2;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 8rem 0 0 0;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .five .form-left {
-  background: #fa38be;
   width: 50%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .five .form-left .title-text {
-  background: #fa990a;
-  margin: 0 2rem 0rem 5rem;
+  margin: 0 2rem 3rem 5rem;
   padding: 0;
 }
 
@@ -739,8 +746,7 @@ body {
 }
 
 .five .form-left .form {
-  background: #af82ff;
-  margin: 0 2rem 0 5rem;
+  margin: 0 2rem 3rem 5rem;
   padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -759,13 +765,296 @@ body {
   border-radius: 0.5rem;
   outline: 0;
   padding: 1rem;
-  margin: 0;
+  margin: 0 0 1rem 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  color: #55286F;
+}
+
+.five .form-left .form input[type="text"]::-webkit-input-placeholder, .five .form-left .form input[type="email"]::-webkit-input-placeholder {
+  color: #BC96E6;
+}
+
+.five .form-left .form input[type="text"]:-ms-input-placeholder, .five .form-left .form input[type="email"]:-ms-input-placeholder {
+  color: #BC96E6;
+}
+
+.five .form-left .form input[type="text"]::-ms-input-placeholder, .five .form-left .form input[type="email"]::-ms-input-placeholder {
+  color: #BC96E6;
+}
+
+.five .form-left .form input[type="text"]::placeholder, .five .form-left .form input[type="email"]::placeholder {
+  color: #BC96E6;
+}
+
+.five .form-left .form input[type="email"]::-webkit-input-placeholder {
+  color: #BC96E6;
+}
+
+.five .form-left .form input[type="email"]:-ms-input-placeholder {
+  color: #BC96E6;
+}
+
+.five .form-left .form input[type="email"]::-ms-input-placeholder {
+  color: #BC96E6;
+}
+
+.five .form-left .form input[type="email"]::placeholder {
+  color: #BC96E6;
 }
 
 .five .form-left .form textarea {
   background: none;
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 5rem;
+  max-height: 13rem;
+  border: 1px solid #55286F;
+  border-radius: 0.5rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: 0;
+  padding: 1rem;
+  margin: 0 0 1rem 0;
+  color: #55286F;
+}
+
+.five .form-left .form textarea::-webkit-input-placeholder {
+  color: #BC96E6;
+}
+
+.five .form-left .form textarea:-ms-input-placeholder {
+  color: #BC96E6;
+}
+
+.five .form-left .form textarea::-ms-input-placeholder {
+  color: #BC96E6;
+}
+
+.five .form-left .form textarea::placeholder {
+  color: #BC96E6;
+}
+
+.five .form-left .form input[type="button"] {
+  background: #55286F;
+  border: 0;
+  border-radius: 0.5rem;
+  color: #ffffff;
+  font-weight: 400;
+  padding: 1rem 2rem;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.five .form-left .text2 {
+  margin: 0 2rem 1rem 5rem;
+  color: #226CE0;
+  font-weight: 400;
+}
+
+.five .form-left .contact-info {
+  margin: 0 2rem 0 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.five .form-left .contact-info .whatsapp, .five .form-left .contact-info .email, .five .form-left .contact-info .address, .five .form-left .contact-info .schedule {
+  width: 48%;
+  margin: 0 0 1rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.five .form-left .contact-info .whatsapp .icon-whatsapp::before, .five .form-left .contact-info .email .icon-whatsapp::before, .five .form-left .contact-info .address .icon-whatsapp::before, .five .form-left .contact-info .schedule .icon-whatsapp::before {
+  content: '';
+  background: url("../src/icons/whatsapp.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  display: block;
+  width: 2rem;
+  height: 2rem;
+}
+
+.five .form-left .contact-info .whatsapp .whatsapp-number, .five .form-left .contact-info .email .whatsapp-number, .five .form-left .contact-info .address .whatsapp-number, .five .form-left .contact-info .schedule .whatsapp-number {
+  margin: 0 0 0 0.5rem;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  color: #226CE0;
+  font-weight: 400;
+}
+
+.five .form-left .contact-info .email .icon-email::before {
+  content: '';
+  background: url("../src/icons/email.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  display: block;
+  width: 2rem;
+  height: 2rem;
+}
+
+.five .form-left .contact-info .email .email-contact {
+  margin: 0 0 0 0.5rem;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  color: #226CE0;
+  font-weight: 400;
+}
+
+.five .form-left .contact-info .address .icon-address::before {
+  content: '';
+  background: url("../src/icons/map.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  display: block;
+  width: 2rem;
+  height: 2rem;
+}
+
+.five .form-left .contact-info .address .address-info {
+  margin: 0 0 0 0.5rem;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  color: #226CE0;
+  font-weight: 400;
+}
+
+.five .form-left .contact-info .schedule .icon-schedule::before {
+  content: '';
+  background: url("../src/icons/calendar.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  display: block;
+  width: 2rem;
+  height: 2rem;
+}
+
+.five .form-left .contact-info .schedule .schedule-info {
+  margin: 0 0 0 0.5rem;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  color: #226CE0;
+  font-weight: 400;
+}
+
+.five .map-right {
+  width: 50%;
+}
+
+.five .map-right iframe {
   width: 100%;
+  height: 100%;
+}
+
+.six {
+  height: 100vh;
+  margin: 3rem 0 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+}
+
+.six .icon-quotesmarks::before {
+  content: ',,';
+  display: block;
+  width: 6rem;
+  height: 9rem;
+  font-size: 21rem;
+  color: #55286F;
+  letter-spacing: -30px;
+  line-height: 0;
+  margin: 0 0 0 5rem;
+}
+
+.six blockquote {
+  font-size: 5rem;
+  font-weight: 400;
+  color: #55286F;
+  line-height: 4.7rem;
+  margin: 1rem 6rem 0 5rem;
+  padding: 0;
+}
+
+.six cite {
+  width: 86%;
+  text-align: right;
+  color: #55286F;
+  font-size: 3rem;
+  margin: 1rem 0 0 5rem;
+}
+
+.footer {
+  background: #55286F;
+  height: 10rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer .footer-nav {
+  width: 62.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer .footer-nav a {
+  padding: 0.5rem 0;
+  margin: 0 2rem;
+  text-decoration: none;
+  color: #BC96E6;
+  font-size: 1rem;
+  border-bottom: 2px solid transparent;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.footer .footer-nav a:hover {
+  border-bottom: 2px solid #BC96E6;
+}
+
+.footer .rrss {
+  width: 62.5rem;
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.footer .rrss a {
+  color: #BC96E6;
+  font-size: 1.2rem;
+  margin: 0 1rem;
+}
+
+.footer .copyright {
+  width: 62.5rem;
+  margin: 0;
+  color: #BC96E6;
+  font-size: 1.2rem;
+  font-weight: 400;
+  text-align: center;
 }
 /*# sourceMappingURL=main.css.map */
